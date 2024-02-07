@@ -16,13 +16,23 @@
   font-size: 50px;
   padding-top: 5px;
    color: #c0e117;
+  /* animation: bounce 0.4s infinite alternate; */
 }
+/* @keyframes bounce {
+  from {
+    transform: translateY(10);
+  }
+  to {
+    transform: translateY(15px);
+  }
+} */
 .logo{ color: #c0e117;
 padding-left: 50px;}
 .heart  {
   width: 50px;
-  color: #c0e117;
+  color: white;
   font-size: larger;
+  margin-left: 5px;
 }
 .menu li {
   display: flex;
@@ -34,6 +44,10 @@ padding-left: 50px;}
 }
 .NavItem:hover{
 color: #c0e117;
+transform: translateY(-10px);
+border-bottom: #c0e117 solid 3px;
+  transition: 0.3s;
+
 }
 .NavItem {
   text-decoration: none;
@@ -42,9 +56,32 @@ color: #c0e117;
 
 .cart  {
   width: 50px;
-  color: #c0e117;
+  color: white;
   padding-right: 20px;
   font-size: larger;
+  text-align: center;
+}
+ .heart :hover{
+  color: #c0e117;
+  transition: 0.3s;
+}
+ .cart :hover{
+  color: #c0e117;
+  transition: 0.3s;
+}
+.count{
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -35px;
+  margin-left: 25px;
+  border-radius: 9px;
+  color: white;
+  font-size: 11px;
+  background-color: red;
+  z-index: 3;
 }
 .nav-fav-cart {
   display: flex;

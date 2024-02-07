@@ -1,0 +1,74 @@
+.footer img {
+  width: 100%;
+  object-fit: cover;
+}
+.footer{
+    width: 100%;
+}
+.logo-bounce {
+  font-size: 50px;
+  padding-top: 5px;
+  color: #c0e117;
+  animation: bounce 1s infinite alternate;
+  font-size: 100px;
+  margin-right: 70px;
+  margin-left: 80px;
+}
+@keyframes bounce {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(25px);
+  }
+}
+hr {
+  background-color: #c0e117;
+  width: 140px;
+  height: 6px;
+  margin-top: 20px;
+  border: none;
+}
+
+.footer-elements {
+  background-color: black;
+  color: #c0e117;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+.footer a {
+  text-decoration: none;
+  color: #c0e117;
+  list-style-type: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-elements {
+  padding: 30px;
+}
+ul li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+.footer ul li:hover {
+  text-decoration: underline;
+}
+.social {
+  display: flex;
+  margin-right: 40px;
+  font-size: 20px;
+  margin-top: -20px;
+}
+
+.contact-social {
+  margin-top: 10px;
+  margin-left: 60px;
+  font-weight: bold;
+}

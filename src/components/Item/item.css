@@ -1,0 +1,13 @@
+
+.Item h3{
+    margin: 6px 0px;
+}
+.item-prices{
+    display: flex;
+    gap:20px
+}
+
+ .shoes-img{
+    width: 200px;
+
+}

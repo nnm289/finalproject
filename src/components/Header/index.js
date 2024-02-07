@@ -13,44 +13,46 @@ const Header = () => {
   return (
     <Navbar fixed="top">
       <div className="NavBar">
-        <div className="NavLogo NavItem">
+        <div className="NavLogo">
           <FontAwesomeIcon icon={faDribbble} className="logo" />
         </div>
         <ul className="menu">
           <li>
-            <Link to="/"  className="NavItem">
+            <Link to="/" className="NavItem">
               Home
             </Link>
           </li>
 
           <li>
-            <Link to="/men"  className="NavItem" >
+            <Link to="/men" className="NavItem">
               Men
             </Link>
           </li>
           <li>
-            <Link to="/women"  className="NavItem">
+            <Link to="/women" className="NavItem">
               Women
             </Link>
           </li>
           <li>
-            <Link to="/about"  className="NavItem">
+            <Link to="/about" className="NavItem">
               About
             </Link>
           </li>
         </ul>
-        {/* <Link to ="/about">about</Link> */}
 
         <div className="nav-fav-cart">
-          <div className="NavItem cart">
-            <Link to="/cart"  className="cart">
+          <div className="cart">
+            <Link to="/cart" className="cart">
               <FontAwesomeIcon icon={faCartShopping} />
             </Link>
+            <div className="count">0</div>
           </div>
-          <div className="NavItem heart">
-            <Link to="/favorites"  className="heart">
+
+          <div className="heart">
+            <Link to="/favorites" className="heart">
               <FontAwesomeIcon icon={faHeart} />
             </Link>
+            <div className="count">0</div>
           </div>
         </div>
       </div>
