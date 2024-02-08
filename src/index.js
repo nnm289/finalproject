@@ -4,12 +4,15 @@ import { BrowserRouter} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ShopContextProvider from './contexts/ShopContext.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <ShopContextProvider>
+        <App />
+      </ShopContextProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

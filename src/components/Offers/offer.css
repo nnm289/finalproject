@@ -4,13 +4,12 @@
     align-items: center;
     gap: 10px;
     margin-top: 40px;
-    background-color: black;
 padding-bottom: 40px;
 }
 .offer h1{
     align-self: center;
     letter-spacing: 3px;
-    color: #c0e117;
+
 }
 .offer hr {
     height: 4px;
@@ -21,9 +20,8 @@ padding-bottom: 40px;
 }
  .offer-item{
     display: flex;
-    gap: 50px;
+    gap: 30px;
     justify-content: space-around;
     margin-left: 10px;
-    color: #c0e117;
 
  }

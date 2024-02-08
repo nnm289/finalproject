@@ -6,6 +6,9 @@ import { faDribbble, faInstagram, faYoutube, faFacebook } from "@fortawesome/fre
 const Footer = () => {
   return (
     <div className="footer">
+      <h1 className='sponsor'>SPONSORED BY
+      </h1>
+      <hr></hr>
       <img src={brands} alt=""></img>
       <div className="footer-elements">
         <div className="bounce">
@@ -29,9 +32,9 @@ const Footer = () => {
         </div>
         <div>
           <ul>
-            <li>Support center</li>
-            <li>FAQs</li>
-            <li>Policy</li>
+            <li>Customer service</li>
+            <li>Delivery</li>
+            <li>Refund</li>
           </ul>
         </div>
 

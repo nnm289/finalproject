@@ -6,8 +6,7 @@ import Item from "../Item";
 const Offer = () => {
   return (
     <div className="offer">
-      <h1>EXCLUSIVE OFFERS</h1>
-      <hr />
+
       <div className="offer-item">
         {data_product.map((item, i) => {
           return (

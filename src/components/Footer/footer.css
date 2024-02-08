@@ -2,8 +2,12 @@
   width: 100%;
   object-fit: cover;
 }
-.footer{
-    width: 100%;
+.footer {
+  width: 100%;
+}
+.footer h1 {
+  text-align: center;
+  letter-spacing: 10px;
 }
 .logo-bounce {
   font-size: 50px;
@@ -36,7 +40,6 @@ hr {
   display: flex;
   justify-content: center;
   gap: 20px;
-  
 }
 
 .footer a {
@@ -63,10 +66,13 @@ ul li {
 .social {
   display: flex;
   margin-right: 40px;
-  font-size: 20px;
+  font-size: 30px;
   margin-top: -20px;
 }
-
+.brand-logo:hover {
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
 .contact-social {
   margin-top: 10px;
   margin-left: 60px;

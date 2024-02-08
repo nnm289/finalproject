@@ -8,7 +8,7 @@
 }
 .popular h1{
     align-self: center;
-    letter-spacing: 3px;
+    letter-spacing: 10px;
 }
 .popular hr {
     height: 4px;
@@ -19,7 +19,7 @@
 }
  .popular-item{
     display: flex;
-    gap: 50px;
+    gap: 30px;
     justify-content: space-around;
     margin-left: 10px;
 
