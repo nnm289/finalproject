@@ -1,5 +1,6 @@
 import React from 'react'
 import "./about.css"
+import collection1 from "../Images/collection1.png"
 const AboutUs = () => {
   return (
     <div className="AboutUs">
@@ -13,6 +14,7 @@ const AboutUs = () => {
             history of sneaker authority that sparks discovery and ignites the
             power of sneaker culture.
           </p>
+          <img src={collection1} alt=""></img>
         </div>
       </div>
       <div className='block block2'> 

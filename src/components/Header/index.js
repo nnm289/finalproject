@@ -45,10 +45,8 @@ const Header = () => {
           </div>
 
           <div className="heart">
-            <Link to="/favorites" className="heart">
-              <FontAwesomeIcon icon={faHeart} />
-            </Link>
-            <div className="count">0</div>
+
+
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { Routes, Route, Outlet} from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 import Home from "./views/index";
 import Shop from "./views/shop";
 import About from "./views/about";

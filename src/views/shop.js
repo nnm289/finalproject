@@ -9,10 +9,10 @@ import Sidebar from "../components/Sidebar";
 import Card from "../components/Others/card";
 import "./shop.css";
 import Footer from "../components/Footer";
-function Shop() {
+function Shop(cart,setCart) {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
-  // ----------- Input Filter -----------
+
   const [query, setQuery] = useState("");
 
   const handleInputChange = (event) => {
@@ -23,7 +23,6 @@ function Shop() {
     (product) => product.name.toLowerCase().indexOf(query.toLowerCase()) !== -1
   );
 
-  // ----------- Radio Filtering -----------
   const handleChange = (event) => {
     setSelectedCategory(event.target.value);
   };
@@ -31,12 +30,11 @@ function Shop() {
   function filteredData(products, selected, query) {
     let filteredProducts = products;
 
-    // Filtering Input Items
+
     if (query) {
       filteredProducts = filteredItems;
     }
 
-    // Applying selected filter
     if (selected) {
       filteredProducts = filteredProducts.filter(
         ({ category, name, type }) =>
@@ -50,6 +48,22 @@ function Shop() {
   }
 
   const result = filteredData(products, selectedCategory, query);
+const addToCart = (product) => {
+  let newCart = [...cart];
+  let itemInCart = newCart.find((item) => product.name === item.name);
+  if (itemInCart) {
+    itemInCart.quantity++;
+  } else {
+    itemInCart = {
+      ...product,
+      quantity: 1,
+    };
+    newCart.push(itemInCart);
+  }
+  setCart(newCart);
+};
+
+
 
   return (
     <div>
@@ -58,7 +72,7 @@ function Shop() {
       <Search query={query} handleInputChange={handleInputChange}></Search>
       <Products result={result} />
 <Footer></Footer>
-<Outlet></Outlet>
+
     </div>
   );
 }
